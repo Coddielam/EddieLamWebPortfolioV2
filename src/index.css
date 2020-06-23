@@ -1,13 +1,235 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a.nav {
+  transition: 0.5s;
+}
+a.nav:hover {
+  color: dodgerblue;
+  font-size: large;
+  padding: 3px;
+}
+
+ul.NavigationBar {
+  background-color: rgba(27, 27, 27, 0.945);
+  height: 4vh;
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 999;
+}
+
+.NavigationBar > a {
+  color: white;
+  text-decoration: none;
+}
+
+a.active-nav {
+  color: palegreen;
+}
+
+.hero-image {
+  background-image: url("./assets/Homepage.svg");
+  background-color: whitesmoke;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-btn,
+.anchor-btn {
+  background-color: tomato;
+  padding: 10px;
+}
+
+.anchor-btn {
+  position: relative;
+  top: 35px;
+}
+
+.hero-image > .banner-content-region {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+}
+
+.banner-content-region > a,
+a.anchor-btn:hover {
+  transition: 0.5s;
+}
+
+.banner-content-region > a:hover,
+a.anchor-btn:hover {
+  background-color: aliceblue;
+}
+
+.project-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+}
+
+a.active-projsec {
+  border-bottom: dodgerblue solid;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5vh 0;
+  background-color: rgb(27, 27, 27);
+}
+
+.project {
+  width: 500px;
+  box-shadow: 0px 5px 7px;
+  background-color: white;
+  padding: 20px;
+  margin: 3vh;
+  transition: 0.5s;
+}
+
+.project > h2 {
+  margin-bottom: 8px;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+/* About page */
+.about-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/undraw_a_day_off_w9ex.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  background-position-x: 75%;
+}
+
+.banner-content-region {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.about-content {
+  margin: 8vh;
+}
+.about-content > h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#resume > img {
+  max-width: -webkit-fill-available;
+  /* animation */
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+#ProjectView > img {
+  width: 90vw;
+}
+
+div#resume {
+  display: flex;
+  justify-content: center;
+  background-color: seagreen;
+  padding: 8vh 10vw;
+}
+
+.banner-content-region > h1 {
+  animation-name: textfloatup;
+  animation-duration: 0.8s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
+.banner-content-region > h2 {
+  animation-name: textfloatup;
+  animation-duration: 0.8s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  position: relative;
+  animation-delay: 0.4s;
+  color: transparent;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textfloatup {
+  from {
+    color: black;
+    top: 0px;
+  }
+  to {
+    color: transparent;
+    top: 15px;
+  }
+}
+
+a.banner-btn {
+  animation-name: appear;
+  animation-duration: 4s;
+}
+
+.project {
+  animation-name: appear;
+  animation-duration: 3s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.ResumePageBanner a.banner-btn,
+.about-banner a.banner-btn {
+  visibility: hidden;
+}
+
+@media (max-width: 500px) {
+  .project {
+    width: 90vw;
+  }
+}
+
+.about-banner,
+.hero-image {
+  /* animation */
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
 }
