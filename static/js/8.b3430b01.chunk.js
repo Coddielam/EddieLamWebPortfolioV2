@@ -1,0 +1,2 @@
+(this.webpackJsonpeddielamwebport=this.webpackJsonpeddielamwebport||[]).push([[8],{47:function(e,t,a){"use strict";a.r(t);var i=a(0),r=a.n(i),c=a(1);t.default=Object(c.o)((function(e){return r.a.createElement("div",{style:{display:"flex",justifyContent:"center",backgroundColor:"white"},className:"ProjectPage"},r.a.createElement("div",{id:"ProjectView"},r.a.createElement("img",{src:e.projectImage,alt:"ChiuMing-Lam Resume"})))}))}}]);
+//# sourceMappingURL=8.b3430b01.chunk.js.map
