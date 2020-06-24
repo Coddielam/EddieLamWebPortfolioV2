@@ -21,33 +21,33 @@ class NavigationBar extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <ul className="NavigationBar">
-          <NavHashLink
-            to="/EddieLamWebPortfolioV2"
-            activeClassName="active-nav"
-            className="nav"
-          >
-            Home
-          </NavHashLink>
+        <Suspense fallback={<div className="loading"></div>}>
+          <ul className="NavigationBar">
+            <NavHashLink
+              to="/EddieLamWebPortfolioV2"
+              activeClassName="active-nav"
+              className="nav"
+            >
+              Home
+            </NavHashLink>
 
-          <NavHashLink
-            to="/about#about-page"
-            activeClassName="active-nav"
-            className="nav"
-          >
-            About
-          </NavHashLink>
+            <NavHashLink
+              to="/about#about-page"
+              activeClassName="active-nav"
+              className="nav"
+            >
+              About
+            </NavHashLink>
 
-          <NavHashLink
-            to="/resume"
-            activeClassName="active-nav"
-            className="nav"
-          >
-            Resume
-          </NavHashLink>
-        </ul>
-        <Switch>
-          <Suspense fallback={<div className="loading">Still Loading...</div>}>
+            <NavHashLink
+              to="/resume"
+              activeClassName="active-nav"
+              className="nav"
+            >
+              Resume
+            </NavHashLink>
+          </ul>
+          <Switch>
             <Route exact path="/EddieLamWebPortfolioV2" component={Home} />
 
             <Route path="/services"></Route>
@@ -68,8 +68,8 @@ class NavigationBar extends React.Component {
               path="/LearningThroughDisaster"
               render={() => <ViewProject projectImage={Titanic} />}
             />
-          </Suspense>
-        </Switch>
+          </Switch>
+        </Suspense>
       </BrowserRouter>
     );
   }
