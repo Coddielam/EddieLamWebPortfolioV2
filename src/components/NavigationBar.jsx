@@ -20,8 +20,8 @@ const ViewProject = lazy(() => import("./ViewProject"));
 class NavigationBar extends React.Component {
   render() {
     return (
-      <BrowserRouter>
-        <Suspense fallback={<div className="loading"></div>}>
+      <Suspense fallback={<div className="loading"></div>}>
+        <BrowserRouter>
           <ul className="NavigationBar">
             <NavHashLink
               to="/EddieLamWebPortfolioV2"
@@ -69,8 +69,8 @@ class NavigationBar extends React.Component {
               render={() => <ViewProject projectImage={Titanic} />}
             />
           </Switch>
-        </Suspense>
-      </BrowserRouter>
+        </BrowserRouter>
+      </Suspense>
     );
   }
 }
