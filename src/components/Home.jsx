@@ -21,14 +21,13 @@ function Home(props) {
         h1text="Hello, I am Eddie."
         h2text="I analyze data and build websites."
         btntext="Check out projects"
-        href="/#project-section"
+        href="#project-section"
       />
       <div id="project-section"></div>
       <BrowserRouter>
         <ul className="project-navigation" data-aos="flip-left">
           <NavHashLink
-            to="/"
-            exact
+            to="/EddieLamWebPortfolioV2"
             strict
             className="switch-view-btn "
             activeClassName="active-projsec"
@@ -44,7 +43,7 @@ function Home(props) {
           </NavHashLink>
         </ul>
 
-        <Route exact path="/">
+        <Route exact path="/EddieLamWebPortfolioV2">
           <div className="projects">
             <ProjectList data={mlprojectInfo} />
           </div>

@@ -30,7 +30,10 @@ const About = () => (
         analytics skills.
       </p>
 
-      <HashLink className="anchor-btn" to="/#project-section">
+      <HashLink
+        className="anchor-btn"
+        to="EddieLamWebPortfolioV2#project-section"
+      >
         Check out projects
       </HashLink>
     </div>

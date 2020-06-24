@@ -233,3 +233,11 @@ a.banner-btn {
   animation-duration: 2s;
   animation-fill-mode: backwards;
 }
+
+.loading {
+  height: 100vh;
+
+  background-image: url(./assets/CatFiercelyTyping.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
