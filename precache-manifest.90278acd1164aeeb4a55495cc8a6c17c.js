@@ -1,31 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc4a882215f6c1a16b6e81058d3a4996",
+    "revision": "1b16d5cbe13b2d508a4fcd63eabccf03",
     "url": "/EddieLamWebPortfolioV2/index.html"
   },
   {
-    "revision": "ff01da7b6d66409ea665",
+    "revision": "e04714f5b027c5d12a2d",
     "url": "/EddieLamWebPortfolioV2/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "03bd9ff7adf56a6b3ed7",
-    "url": "/EddieLamWebPortfolioV2/static/css/main.91b7e404.chunk.css"
+    "revision": "e3628efc49fb3d4112b1",
+    "url": "/EddieLamWebPortfolioV2/static/css/main.2d1a44af.chunk.css"
   },
   {
-    "revision": "ff01da7b6d66409ea665",
-    "url": "/EddieLamWebPortfolioV2/static/js/2.f323074f.chunk.js"
+    "revision": "e04714f5b027c5d12a2d",
+    "url": "/EddieLamWebPortfolioV2/static/js/2.8dc0b5a5.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/EddieLamWebPortfolioV2/static/js/2.f323074f.chunk.js.LICENSE.txt"
+    "url": "/EddieLamWebPortfolioV2/static/js/2.8dc0b5a5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03bd9ff7adf56a6b3ed7",
-    "url": "/EddieLamWebPortfolioV2/static/js/main.314f64ad.chunk.js"
+    "revision": "9c2f891cccf91774f4e0",
+    "url": "/EddieLamWebPortfolioV2/static/js/3.16d5ee81.chunk.js"
   },
   {
-    "revision": "a1609de779244ca60f4d",
-    "url": "/EddieLamWebPortfolioV2/static/js/runtime-main.6792de36.js"
+    "revision": "38dcd0c842f244ea2ec4",
+    "url": "/EddieLamWebPortfolioV2/static/js/4.81230e59.chunk.js"
+  },
+  {
+    "revision": "334d680d95b87f27e34f",
+    "url": "/EddieLamWebPortfolioV2/static/js/5.761edec9.chunk.js"
+  },
+  {
+    "revision": "7caab763de5c03f796fd",
+    "url": "/EddieLamWebPortfolioV2/static/js/6.ee061baf.chunk.js"
+  },
+  {
+    "revision": "e3628efc49fb3d4112b1",
+    "url": "/EddieLamWebPortfolioV2/static/js/main.ff346534.chunk.js"
+  },
+  {
+    "revision": "1a59879d6d2331f03532",
+    "url": "/EddieLamWebPortfolioV2/static/js/runtime-main.0f426f09.js"
+  },
+  {
+    "revision": "e8a69aee737e7702b817bd0462e0489c",
+    "url": "/EddieLamWebPortfolioV2/static/media/CatFiercelyTyping.e8a69aee.gif"
   },
   {
     "revision": "877f1db13a8883c5138549e4cac821d3",
